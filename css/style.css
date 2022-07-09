@@ -73,3 +73,39 @@ img {
   color: var(--blanco);
   margin-top: 5rem;
 }
+/**Barra de navegacion**/
+/**Logo**/
+.logo {
+  color: var(--blanco);
+}
+.logo__nombre {
+  font-weight: 400;
+}
+.logo__bold {
+  font-weight: 700;
+}
+/**Navegación**/
+.navegacion__enlace {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--blanco);
+}
+@media (min-width: 768px) {
+  /**Pagina Principal**/
+  /**header**/
+  .header__texto {
+    margin-top: 15rem;
+  }
+  /**Barra de Navegación**/
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /**Navegacion**/
+  .navegacion {
+    display: flex;
+    gap: 2rem;
+  }
+}
