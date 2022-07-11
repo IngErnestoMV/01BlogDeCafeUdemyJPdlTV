@@ -3,6 +3,7 @@
   --fuenteParrafos: "Open Sans", sans-serif;
 
   --primario: #784d3c;
+  --gris: #e1e1e1;
   --blanco: #ffffff;
   --negro: #000000;
 }
@@ -91,6 +92,29 @@ img {
   font-size: 1.8rem;
   color: var(--blanco);
 }
+/**Main**/
+.entrada {
+  border-bottom: 0.1rem solid var(--gris);
+  margin-bottom: 2rem;
+}
+.entrada:last-of-type {
+  margin: none;
+  margin-bottom: 0;
+}
+.boton {
+  display: block;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.boton--primario {
+  background-color: var(--negro);
+}
 @media (min-width: 768px) {
   /**Pagina Principal**/
   /**header**/
@@ -108,4 +132,13 @@ img {
     display: flex;
     gap: 2rem;
   }
+  /**Main**/
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .boton {
+    display: inline-block;
+  }
+  /**Sidebar**/
 }
