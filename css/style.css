@@ -76,6 +76,9 @@ img {
   margin-top: 5rem;
 }
 /**Barra de navegacion**/
+.barra {
+  padding-top: 4rem;
+}
 /**Logo**/
 .logo {
   color: var(--blanco);
@@ -145,7 +148,8 @@ img {
 /**Footer**/
 .footer {
   background: var(--negro);
-  height: 60rem;
+  padding-bottom: 3rem;
+  margin-top: 4rem;
 }
 @media (min-width: 768px) {
   /**Pagina Principal**/
