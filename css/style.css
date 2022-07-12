@@ -163,6 +163,15 @@ img {
 .curso:last-of-type {
   border: none;
 } /****fin Cursos****/
+/****Contacto****/
+.contacto-bg {
+  background-image: url(..img/contacto.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/****fin Contacto****/
 @media (min-width: 768px) {
   /****Pagina Principal****/
   /**header**/

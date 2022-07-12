@@ -30,66 +30,27 @@
             <p class="no-margin"> Aprende de los expertos con las mejores recetas y consejos</p>
         </div>
     </header><!--header-->
-    <div class="contenedor contenido-principal">
-        <main class="blog">
-            <h3>Nuestro Blog</h3>
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="Imagen Blog">
-                </div>
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Tipos de Grano de Café</h4>
-                    <p>Consequuntur deleniti nam molestiae dolorum fugiat, recusandae voluptatem beatae unde quia illum, saepe quibusdam maxime sapiente eum, expedita magni libero. Doloremque, veritatis.</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
-                </div>
-            </article>
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="Imagen Blog">
-                </div>
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Tres Deliciosas Recetas de Café</h4>
-                    <p>Consequuntur deleniti nam molestiae dolorum fugiat, recusandae voluptatem beatae unde quia illum, saepe quibusdam maxime sapiente eum, expedita magni libero. Doloremque, veritatis.</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
-                </div>
-            </article>
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="Imagen Blog">
-                </div>
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Beneficios del Café</h4>
-                    <p>Consequuntur deleniti nam molestiae dolorum fugiat, recusandae voluptatem beatae unde quia illum, saepe quibusdam maxime sapiente eum, expedita magni libero. Doloremque, veritatis.</p>
-                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
-                </div>
-            </article>
-        </main>
-        <aside class="sidebar">
-            <h3>Nuestros Cursos y Talleres</h3>
-            <ul class="cursos no-padding">
-                <li class="widget-curso">
-                    <h4 class="no-margin">Técnicas de Extracción de Café</h4>
-                    <p  class="widget-curso__label">Precio:
-                        <span class="widget-curso__info">Gratis</span>
-                    </p>
-                    <p  class="widget-curso__label">Cupo:
-                        <span class="widget-curso__info">20</span>
-                    </p>
-                    <a href="entrada.html" class="boton boton--secundario">Más información</a>
-                </li>
-                <li class="widget-curso">
-                    <h4 class="no-margin">4 Racetas de Café Para Principiantes</h4>
-                    <p  class="widget-curso__label">Precio:
-                        <span class="widget-curso__info">Gratis</span>
-                    </p>
-                    <p  class="widget-curso__label">Cupo:
-                        <span class="widget-curso__info">20</span>
-                    </p>
-                    <a href="entrada.html" class="boton boton--secundario">Más información</a>
-                </li>
-            </ul>         
-        </aside><!--contenedor-->
-    </div>
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+        <div class="contacto-bg"></div>
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+        </form>
+    </main>
     <footer class="footer">
         <div class="contenedor">
             <div class="barra">
