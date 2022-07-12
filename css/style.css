@@ -51,7 +51,7 @@ h4 {
 }
 img {
   max-width: 100%;
-}
+} /**Fin Globales**/
 /**Utilidades**/
 .no-margin {
   margin: 0;
@@ -61,8 +61,8 @@ img {
 }
 .centrar-texto {
   text-align: center;
-}
-/**Pagina Principal**/
+} /**Fin Utilidades**/
+/****Pagina Principal****/
 /**header**/
 .header {
   background-image: url(../img/banner.jpg);
@@ -74,11 +74,11 @@ img {
 .header__texto {
   color: var(--blanco);
   margin-top: 5rem;
-}
+} /**Fin header**/
 /**Barra de navegacion**/
 .barra {
   padding-top: 4rem;
-}
+} /**Fin Barra de navegacion**/
 /**Logo**/
 .logo {
   color: var(--blanco);
@@ -88,14 +88,14 @@ img {
 }
 .logo__bold {
   font-weight: 700;
-}
+} /**Fin Logo**/
 /**Navegación**/
 .navegacion__enlace {
   display: block;
   text-align: center;
   font-size: 1.8rem;
   color: var(--blanco);
-}
+} /**Fin Navegación**/
 /**Main**/
 .entrada {
   border-bottom: 0.1rem solid var(--gris);
@@ -118,7 +118,7 @@ img {
 }
 .boton--primario {
   background-color: var(--negro);
-}
+} /**Fin Main**/
 /**Sidebar**/
 .boton--secundario {
   background-color: var(--primario);
@@ -144,30 +144,31 @@ img {
 .widget-curso__label,
 .widget-curso__info {
   font-size: 2rem;
-}
+} /**Fin Sidebar**/
 /**Footer**/
 .footer {
   background: var(--negro);
   padding-bottom: 3rem;
   margin-top: 4rem;
-}
+} /**Fin Footer**/
+/****Fin Pagina Principal****/
 @media (min-width: 768px) {
-  /**Pagina Principal**/
+  /****Pagina Principal****/
   /**header**/
   .header__texto {
     margin-top: 15rem;
-  }
+  } /**Fin header**/
   /**Barra de Navegación**/
   .barra {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } /**Fin Barra de Navegación**/
   /**Navegacion**/
   .navegacion {
     display: flex;
     gap: 2rem;
-  }
+  } /**Fin Navegacion**/
   /**Main**/
   .contenido-principal {
     display: grid;
@@ -176,6 +177,37 @@ img {
   }
   .boton {
     display: inline-block;
+  } /**Fin Main**/
+  /****Fin Pagina Principal****/
+  /****Nosotros****/
+  /*.sobre-nosotros {
+    display: flex;
+    gap: 2rem;
   }
-  /**Sidebar**/
+  .sobre-nosotros__imagen,
+  .sobre-nosotros__texto {
+    flex-basis: 50%;
+  }*/
+  /*.sobre-nosotros {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sobre-nosotros__imagen,
+  .sobre-nosotros__texto {
+    flex-basis: calc(50% - 1rem);
+  }*/
+  /*.sobre-nosotros {
+    display: flex;
+  }
+  .sobre-nosotros__imagen {
+    flex: 0 0 calc(50% - 1rem);
+  }
+  .sobre-nosotros__texto {
+    flex: 0 0 calc(50% - 1rem);
+  }*/
+  .sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  } /****Fin Nosotros****/
 }
